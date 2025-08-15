@@ -1,0 +1,554 @@
+
+/* From Uiverse.io by kandalgaonkarshubham */ 
+.container {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+}
+
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #3a0c55; /* Dark purple */
+  padding: 10px 20px;
+  border-bottom-left-radius: 10px; /* Rounded corner */
+  z-index: 1000;
+}
+
+Salhi Firas, [8/15/2025 4:36 PM]
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1b0b2f; /* Dark background for contrast */
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #3a0c55; /* Dark purple */
+  padding: 10px 20px;
+  border-bottom-left-radius: 10px; /* Rounded corner */
+  z-index: 1000;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.top-nav ul li a:hover {
+  color: #ff8cff; /* Lighter purple on hover */
+  transform: scale(1.1);
+}
+
+Salhi Firas, [8/15/2025 4:38 PM]
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1b0b2f; /* لون الخلفية الرئيسي للصفحة */
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #3a0c55, #5a1a7a); /* تدرج لإضافة جمالية */
+  padding: 15px 30px; /* زيادة الطول والعرض */
+  border-bottom-left-radius: 15px; /* انحناء أكثر أناقة */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4); /* ظل يعطي عمق */
+  z-index: 1000;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px; /* زيادة المسافة بين الروابط */
+}
+
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* حجم نص أكبر قليلًا */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.top-nav ul li a:hover {
+  color: #ff8cff; /* لون عند المرور عليه */
+  transform: scale(1.1);
+}
+.gojo-image {
+  position: absolute;
+  top: 100px;        /* أسفل شريط التنقل */
+  left: 20px;        /* من يسار الصفحة */
+  width: 360px;      /* حجم أكبر */
+  height: 360px;     
+  z-index: 0;
+  animation: moveRight 3s forwards; /* حركة تلقائية لليمين */
+}
+
+.gojo-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;      
+  object-fit: cover;       
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* تعريف الحركة */
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px); /* تتحرك 30px إلى اليمين */
+  }
+}
+.about-me {
+  position: absolute;
+  top: 120px;          
+  left: 420px;         /* زيادة المسافة لليمين لتجنب تداخل الصورة */
+  max-width: 500px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: left;    /* محتوى النص إلى اليسار بالنسبة للعنصر */
+}
+
+.about-me h1 {
+  font-size: 48px;      
+  margin: 0 0 10px 0;
+  color: #b565f5;       /* بنفسجي */
+}
+
+.roles {
+  font-size: 24px;
+  margin-bottom: 20px;
+  height: 30px;        
+  overflow: hidden;
+  position: relative;
+}
+
+.roles span {
+  position: absolute;
+  opacity: 0;
+  animation: rolesAnimation 6s linear infinite 0s;
+  color: #b565f5;       /* بنفسجي */
+}
+
+.roles span:nth-child(1) { animation-delay: 0s; }
+.roles span:nth-child(2) { animation-delay: 2s; }
+.roles span:nth-child(3) { animation-delay: 4s; }
+
+@keyframes rolesAnimation {
+  0%, 33% { opacity: 1; transform: translateY(0); }
+  33.01%, 100% { opacity: 0; transform: translateY(-100%); }
+}
+
+.bio {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  color: white;          /* يمكن تغييره لاحقًا حسب الخلفية */
+}
+html {
+  scroll-behavior: smooth;
+}
+.my-works {
+  padding: 120px 50px 50px 50px; 
+  color: white;
+  font-family: Arial, sans-serif;
+  background: #1b0b2f; /* خلفية بنفسجية داكنة */
+}
+
+.my-works h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #b565f5; /* بنفسجي */
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.work-item {
+  background: rgba(58, 12, 85, 0.8); /* خلفية شفافة بنفسجي */
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.work-item h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #ff8cff;
+}
+
+.work-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(181, 101, 245, 0.15); /* بنفسجي شفاف */
+  color: #ff8cff;
+  font-size: 22px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #b565f5;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+/* From Uiverse.io by dexter-st */ 
+.loader-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: white;
+  border-radius: 50%;
+  background-color: transparent;
+  user-select: none;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: loader-rotate 2s linear infinite;
+  z-index: 0;
+}
+
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(90deg);
+    box-shadow:
+      0 10px 20px 0 #fff inset,
+      0 20px 30px 0 #ad5fff inset,
+      0 60px 60px 0 #471eec inset;
+  }
+  50% {
+    transform: rotate(270deg);
+    box-shadow:
+      0 10px 20px 0 #fff inset,
+      0 20px 10px 0 #d60a47 inset,
+      0 40px 60px 0 #311e80 inset;
+  }
+  100% {
+    transform: rotate(450deg);
+    box-shadow:
+      0 10px 20px 0 #fff inset,
+      0 20px 30px 0 #ad5fff inset,
+      0 60px 60px 0 #471eec inset;
+  }
+}
+
+.loader-letter {
+  display: inline-block;
+  opacity: 0.4;
+  transform: translateY(0);
+  animation: loader-letter-anim 2s infinite;
+  z-index: 1;
+  border-radius: 50ch;
+  border: none;
+}
+
+.loader-letter:nth-child(1) {
+  animation-delay: 0s;
+}
+.loader-letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loader-letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loader-letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loader-letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loader-letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loader-letter:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.loader-letter:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.loader-letter:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.loader-letter:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes loader-letter-anim {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  40% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
+/* From Uiverse.io by KSAplay */ 
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.loading-text {
+  color: white;
+  font-size: 14pt;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.dot {
+  margin-left: 3px;
+  animation: blink 1.5s infinite;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.loading-bar-background {
+  --height: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 200px;
+  height: var(--height);
+  background-color: #212121 /*change this*/;
+  box-shadow: #0c0c0c -2px 2px 4px 0px inset;
+  border-radius: calc(var(--height) / 2);
+}
+
+.loading-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  --height: 20px;
+  width: 0%;
+  height: var(--height);
+  overflow: hidden;
+  background: rgb(222, 74, 15);
+  background: linear-gradient(
+    0deg,
+    rgba(222, 74, 15, 1) 0%,
+    rgba(249, 199, 79, 1) 100%
+  );
+  border-radius: calc(var(--height) / 2);
+  animation: loading 4s ease-out infinite;
+}
+
+.white-bars-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.white-bar {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  width: 10px;
+  height: 45px;
+  opacity: 0.3;
+  rotate: 45deg;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+

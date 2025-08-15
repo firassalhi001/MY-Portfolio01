@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO </title>
+     <link rel="icon" href="icon.png" type="image.png">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<body>
+    <div class="pyramid-loader">
+  <div class="wrapper">
+    <span class="side side1"></span>
+    <span class="side side2"></span>
+    <span class="side side3"></span>
+    <span class="side side4"></span>
+    <span class="shadow"></span>
+  </div>  
+</div>
+
+<style>
+/* الخلفية العامة - يمكن تعديلها لاحقاً */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* الهرم */
+.pyramid-loader {
+  position: fixed;  /* لتثبيت العنصر */
+  top: 20px;        /* مسافة من أعلى الصفحة */
+  left: 20px;       /* مسافة من اليسار */
+  width: 150px;     /* حجم مصغر للرمز */
+  height: 150px;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotateY(360deg); }
+}
+
+/* الجوانب الأربعة للهرم */
+.pyramid-loader .wrapper .side {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transform-origin: center top;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+  transform: rotateZ(-30deg) rotateY(90deg);
+  background: conic-gradient(#2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .side2 {
+  transform: rotateZ(30deg) rotateY(90deg);
+  background: conic-gradient(#2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side3 {
+  transform: rotateX(30deg);
+  background: conic-gradient(#2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side4 {
+  transform: rotateX(-30deg);
+  background: conic-gradient(#2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+/* الظل أسفل الهرم */
+.pyramid-loader .wrapper .shadow {
+  width: 30px;
+  height: 30px;
+  background: #8B5AD5;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transform: rotateX(90deg) translateZ(-20px);
+  filter: blur(8px);
+}
+</style>
+</script>
+</head>
+<body>
+    <!-- From Uiverse.io by kennyotsu --> 
+<div class="container"></div>
+<nav class="top-nav">
+  <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="https://wa.me/213798100033" target="_blank">CONTACT</a></li>
+    <li><a href="about.html">ABOUT ME</a></li>
+    <li><a href="my works.html">MY WORKS</a></li>
+  </ul>
+  </nav>
+  <!-- Home Image GOJO -->
+<div class="gojo-image">
+  <img src="gojo.jpg" alt="GOJO">
+</div>
+<div class="about-me">
+  <h1>FIRAS</h1>
+  <div class="roles">
+    <span>IM DEVELOPER</span>
+    <span>TRADER</span>
+    <span>BIKER</span>
+  </div>
+  <p class="bio">
+    I AM FIRAS, 18 YEARS OLD, ALGERIAN ARCHITECTURE STUDENT. 
+    Passionate about designing, coding, motorcycles, and trading. 
+    Always curious and striving for excellence.
+  </p>
+</div>
+            <div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</html>
